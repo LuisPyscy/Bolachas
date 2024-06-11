@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/roxo_projeto"
+    tools:context=".activities.RegisterActivity">
+
+
+    <Button
+        android:id="@+id/btlib"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botaoadd2"
+        android:fontFamily="@font/barrio"
+        android:padding="20dp"
+        android:text="Catálogo de Discos"
+        android:textAlignment="center"
+        android:textColor="#200C45"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btadd"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btadd"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:background="@drawable/botaoadd"
+        android:fontFamily="@font/barrio"
+        android:padding="20dp"
+        android:text="Adicionar Disco"
+        android:textAlignment="center"
+        android:textColor="#200C45"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btlib"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBolachas"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/logoBolachas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:importantForAccessibility="no"
+        android:src="@drawable/bolachas"
+        app:layout_constraintBottom_toTopOf="@+id/btadd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="* Este app foi desenvolvido por Pablo Araújo, Luis Henrique e Beatriz Diniz *"
+        android:textAlignment="center"
+        android:textColor="@color/verde_musgo"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btlib" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/logoBolachas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+
+            android:fontFamily="@font/fascinate_inline"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:text="Bolachas"
+            android:textColor="@color/amamrelo_claro"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="350dp"
+            android:background="#9C27B0"
+            android:contentDescription="Icone para lista de discos"
+            android:tint="@color/amamrelo_claro"
+            app:srcCompat="@drawable/ic_info"
+            tools:ignore="UseAppTint" />
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
